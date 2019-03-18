@@ -7,6 +7,26 @@
 //
 
 import Foundation
+print("Your Lucky number:")
+var myL = readLine()
+var myLI = Int(myL!)
+while myLI! < 6 || myLI! > 12{
+    print("Your lucky number must be > 6 and < 12\nTry Again!")
+    myL = readLine()
+    myLI = Int(myL!)
+}
+loto(myLI!)
 
-print("Hello, World!")
+
+
+
+
+
+
+
+
+
+
+
+
 
