@@ -15,10 +15,9 @@ import Foundation
 func RemoteControl(_ ch: Int, _ broken: [Int]) {
     var numb: Int = 0
     var pom: Int = 0
+    var chna: Int = 0
     while numb <= broken.count - 1{
         if ch == broken[numb] {
-            print ("broken")
-        } else {
             if pom < ch{
                 while pom < ch{
                     pom += 1
@@ -32,6 +31,11 @@ func RemoteControl(_ ch: Int, _ broken: [Int]) {
                 }
             }
 
+        } else {
+            numb += 1
         }
     }
+    print("\(ch)")
+    
+    
 }
